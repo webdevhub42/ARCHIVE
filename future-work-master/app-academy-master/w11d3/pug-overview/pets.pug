@@ -1,0 +1,33 @@
+extends layout.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link=(rel="stylesheet", href="https://unpkg.com/purecss@2.0.3/build/pure-min.css")
+        title Pet Track
+    body
+      header
+        ul
+          li: a(href="/pets") Pets
+          li: a(href="/owners") Owners
+       main
+         table.pure-table.pure-table-striped
+           thread
+             tr
+               th Name
+               th Type
+               th Age
+               th Owners
+            tbody
+              each pet in pets
+              tr
+                td= pet.name
+                td= pet.PetType.type
+                td= pet.age
+              else
+                tr
+                  td(colspan=4) No pets
+            form.pure-form(action="
+            ")
