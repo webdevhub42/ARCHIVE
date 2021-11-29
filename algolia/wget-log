@@ -1,0 +1,187 @@
+--2021-11-27 08:54:00--  https://www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e?utm_medium=page_link
+Resolving www.algolia.com (www.algolia.com)... 104.16.45.55, 104.16.46.55
+Connecting to www.algolia.com (www.algolia.com)|104.16.45.55|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e?utm_medium=page_link.html’
+
+                             www.algolia.com/interface-dem     [<=>                                                                                                                                     ]       0  --.-KB/s               www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6     [ <=>                                                                                                                                    ]   5.83K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:01 (4.64 MB/s) - ‘www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e?utm_medium=page_link.html’ saved [5969]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/interface-demo-bcca625f5d7b8b23da0105a3b091506d.css
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 42518 (42K) [text/css]
+Saving to: ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/interface-demo-bcca625f5d7b8b23da0105a3b091506d.css’
+
+                             www.algolia.com/client-assets   0%[                                                                                                                                        ]       0  --.-KB/s                                           www.algolia.com/client-assets/  99%[======================================================================================================================================> ]  41.36K   200KB/s               www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c0 100%[=======================================================================================================================================>]  41.52K   200KB/s    in 0.2s    
+
+2021-11-27 08:54:01 (200 KB/s) - ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/interface-demo-bcca625f5d7b8b23da0105a3b091506d.css’ saved [42518/42518]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/assets/favicon/favicon-6b7fb5a6cb76ab8acd945a572194e80b705cac0170e772431e7a4e4c56575e96.ico
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 34494 (34K) [image/vnd.microsoft.icon]
+Saving to: ‘www.algolia.com/assets/favicon/favicon-6b7fb5a6cb76ab8acd945a572194e80b705cac0170e772431e7a4e4c56575e96.ico’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/favicon-6b7fb5a6cb76ab8acd9 100%[=======================================================================================================================================>]  33.69K  --.-KB/s    in 0.003s  
+
+2021-11-27 08:54:01 (10.2 MB/s) - ‘www.algolia.com/assets/favicon/favicon-6b7fb5a6cb76ab8acd945a572194e80b705cac0170e772431e7a4e4c56575e96.ico’ saved [34494/34494]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/assets/favicon/apple-touch-icon-57x57-a81a192d02525cbc45b96fcd777538b5e5766274e346f7f0cae7fd0036214351.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 3608 (3.5K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-57x57-a81a192d02525cbc45b96fcd777538b5e5766274e346f7f0cae7fd0036214351.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-57x57-a81a 100%[=======================================================================================================================================>]   3.52K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:01 (6.71 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-57x57-a81a192d02525cbc45b96fcd777538b5e5766274e346f7f0cae7fd0036214351.png?v=3’ saved [3608/3608]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/assets/favicon/apple-touch-icon-60x60-48a93f2897d233d433935b76af8acb42bd96801e280bd28908faae46f346dcb5.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 2685 (2.6K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-60x60-48a93f2897d233d433935b76af8acb42bd96801e280bd28908faae46f346dcb5.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-60x60-48a9 100%[=======================================================================================================================================>]   2.62K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:01 (4.14 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-60x60-48a93f2897d233d433935b76af8acb42bd96801e280bd28908faae46f346dcb5.png?v=3’ saved [2685/2685]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/assets/favicon/apple-touch-icon-72x72-d90f602f60a47294f434e79f2a020bbb2895e1a9f4283b4a8db0b40a76c1fb0b.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 4729 (4.6K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-72x72-d90f602f60a47294f434e79f2a020bbb2895e1a9f4283b4a8db0b40a76c1fb0b.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-72x72-d90f 100%[=======================================================================================================================================>]   4.62K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:01 (4.63 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-72x72-d90f602f60a47294f434e79f2a020bbb2895e1a9f4283b4a8db0b40a76c1fb0b.png?v=3’ saved [4729/4729]
+
+--2021-11-27 08:54:01--  https://www.algolia.com/assets/favicon/apple-touch-icon-76x76-394309776d61ff3a39dba502c45a891836a85a548446cbc104430ed6c59392a8.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5436 (5.3K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-76x76-394309776d61ff3a39dba502c45a891836a85a548446cbc104430ed6c59392a8.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-76x76-3943 100%[=======================================================================================================================================>]   5.31K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:02 (6.07 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-76x76-394309776d61ff3a39dba502c45a891836a85a548446cbc104430ed6c59392a8.png?v=3’ saved [5436/5436]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/apple-touch-icon-114x114-1b2a908396f6316f9209c9a290a05455a20e77096bfe5be9e0e35be89cc178d8.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 12324 (12K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-114x114-1b2a908396f6316f9209c9a290a05455a20e77096bfe5be9e0e35be89cc178d8.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-114x114-1b 100%[=======================================================================================================================================>]  12.04K  --.-KB/s    in 0.002s  
+
+2021-11-27 08:54:02 (7.23 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-114x114-1b2a908396f6316f9209c9a290a05455a20e77096bfe5be9e0e35be89cc178d8.png?v=3’ saved [12324/12324]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/apple-touch-icon-120x120-84c295e1a394ca826f1e45b628bbb9980845303dc487433ff82e4c1ca4b19fed.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 7797 (7.6K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-120x120-84c295e1a394ca826f1e45b628bbb9980845303dc487433ff82e4c1ca4b19fed.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-120x120-84 100%[=======================================================================================================================================>]   7.61K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:02 (5.77 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-120x120-84c295e1a394ca826f1e45b628bbb9980845303dc487433ff82e4c1ca4b19fed.png?v=3’ saved [7797/7797]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/apple-touch-icon-144x144-df1705feffa97395432bc8c0380d879784b0d84039c71b2b25656e168c90559b.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 16549 (16K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-144x144-df1705feffa97395432bc8c0380d879784b0d84039c71b2b25656e168c90559b.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-144x144-df 100%[=======================================================================================================================================>]  16.16K  --.-KB/s    in 0.003s  
+
+2021-11-27 08:54:02 (5.44 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-144x144-df1705feffa97395432bc8c0380d879784b0d84039c71b2b25656e168c90559b.png?v=3’ saved [16549/16549]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/apple-touch-icon-152x152-d902b95a9dc62bf14c4d8e2b1d17d1131f63710eda8de8cbe5d129e24f173545.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 11403 (11K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/apple-touch-icon-152x152-d902b95a9dc62bf14c4d8e2b1d17d1131f63710eda8de8cbe5d129e24f173545.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/apple-touch-icon-152x152-d9 100%[=======================================================================================================================================>]  11.14K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:02 (8.44 MB/s) - ‘www.algolia.com/assets/favicon/apple-touch-icon-152x152-d902b95a9dc62bf14c4d8e2b1d17d1131f63710eda8de8cbe5d129e24f173545.png?v=3’ saved [11403/11403]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/android-icon-192x192-ee555fc174851d257a4e0bf27ceb51ccc64a9b8b42a269b6f3716323f7424b8c.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 10564 (10K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/android-icon-192x192-ee555fc174851d257a4e0bf27ceb51ccc64a9b8b42a269b6f3716323f7424b8c.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/android-icon-192x192-ee555f 100%[=======================================================================================================================================>]  10.32K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:02 (10.5 MB/s) - ‘www.algolia.com/assets/favicon/android-icon-192x192-ee555fc174851d257a4e0bf27ceb51ccc64a9b8b42a269b6f3716323f7424b8c.png?v=3’ saved [10564/10564]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/favicon-32x32-96b0b21a8eabdb047bcb24efc637a86479a0f56c2360d2f1fcec1eea13a2a62c.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 948 [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/favicon-32x32-96b0b21a8eabdb047bcb24efc637a86479a0f56c2360d2f1fcec1eea13a2a62c.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/favicon-32x32-96b0b21a8eabd 100%[=======================================================================================================================================>]     948  --.-KB/s    in 0s      
+
+2021-11-27 08:54:02 (94.2 MB/s) - ‘www.algolia.com/assets/favicon/favicon-32x32-96b0b21a8eabdb047bcb24efc637a86479a0f56c2360d2f1fcec1eea13a2a62c.png?v=3’ saved [948/948]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/favicon-96x96-888cef5d52d99c7d071f8aac3f96739da1a2d37b4b05d13d8123cc0df1e7dfeb.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 5371 (5.2K) [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/favicon-96x96-888cef5d52d99c7d071f8aac3f96739da1a2d37b4b05d13d8123cc0df1e7dfeb.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/favicon-96x96-888cef5d52d99 100%[=======================================================================================================================================>]   5.25K  --.-KB/s    in 0.001s  
+
+2021-11-27 08:54:02 (4.16 MB/s) - ‘www.algolia.com/assets/favicon/favicon-96x96-888cef5d52d99c7d071f8aac3f96739da1a2d37b4b05d13d8123cc0df1e7dfeb.png?v=3’ saved [5371/5371]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/favicon-16x16-ca07d46973cba798f0258a9a455d397f662a77512012cb189f20f1c57662c3be.png?v=3
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 445 [image/png]
+Saving to: ‘www.algolia.com/assets/favicon/favicon-16x16-ca07d46973cba798f0258a9a455d397f662a77512012cb189f20f1c57662c3be.png?v=3’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/favicon-16x16-ca07d46973cba 100%[=======================================================================================================================================>]     445  --.-KB/s    in 0s      
+
+2021-11-27 08:54:02 (56.6 MB/s) - ‘www.algolia.com/assets/favicon/favicon-16x16-ca07d46973cba798f0258a9a455d397f662a77512012cb189f20f1c57662c3be.png?v=3’ saved [445/445]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/assets/favicon/algolia-safari-pinned-tab-e00bbcbab432314030de95cf09dd32d6aeef7ff5598a42addbd7d04653569bf1.svg
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 639 [image/svg+xml]
+Saving to: ‘www.algolia.com/assets/favicon/algolia-safari-pinned-tab-e00bbcbab432314030de95cf09dd32d6aeef7ff5598a42addbd7d04653569bf1.svg’
+
+                             www.algolia.com/assets/favico   0%[                                                                                                                                        ]       0  --.-KB/s               www.algolia.com/assets/favicon/algolia-safari-pinned-tab-e 100%[=======================================================================================================================================>]     639  --.-KB/s    in 0s      
+
+2021-11-27 08:54:02 (72.5 MB/s) - ‘www.algolia.com/assets/favicon/algolia-safari-pinned-tab-e00bbcbab432314030de95cf09dd32d6aeef7ff5598a42addbd7d04653569bf1.svg’ saved [639/639]
+
+--2021-11-27 08:54:02--  https://www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-vendors-809dd7f1f9cf10f48f8f.js
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 519428 (507K) [application/javascript]
+Saving to: ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-vendors-809dd7f1f9cf10f48f8f.js’
+
+                             www.algolia.com/client-assets   0%[                                                                                                                                        ]       0  --.-KB/s                                           www.algolia.com/client-assets/   9%[===========>                                                                                                                            ]  48.00K   200KB/s                                          www.algolia.com/client-assets/7  18%[========================>                                                                                                               ]  96.00K   200KB/s                                         www.algolia.com/client-assets/72  28%[=====================================>                                                                                                  ] 144.00K   200KB/s                                        www.algolia.com/client-assets/72f  37%[=================================================>                                                                                      ] 189.76K   200KB/s                                       www.algolia.com/client-assets/72ff  46%[==============================================================>                                                                         ] 237.76K   200KB/s                                      www.algolia.com/client-assets/72ffc  56%[===========================================================================>                                                            ] 285.76K   200KB/s                                     www.algolia.com/client-assets/72ffc3  65%[========================================================================================>                                               ] 333.76K   200KB/s                                    www.algolia.com/client-assets/72ffc37  75%[=====================================================================================================>                                  ] 381.76K   200KB/s                                   www.algolia.com/client-assets/72ffc375  84%[==================================================================================================================>                     ] 429.76K   200KB/s                                  www.algolia.com/client-assets/72ffc3756  94%[===============================================================================================================================>        ] 477.76K   200KB/s               www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c0 100%[=======================================================================================================================================>] 507.25K   212KB/s    in 2.4s    
+
+2021-11-27 08:54:05 (212 KB/s) - ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-vendors-809dd7f1f9cf10f48f8f.js’ saved [519428/519428]
+
+--2021-11-27 08:54:05--  https://www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-interfaceDemo-56837fb5fc4041841027.js
+Reusing existing connection to www.algolia.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 938667 (917K) [application/javascript]
+Saving to: ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-interfaceDemo-56837fb5fc4041841027.js’
+
+                             www.algolia.com/client-assets   0%[                                                                                                                                        ]       0  --.-KB/s                                           www.algolia.com/client-assets/   4%[=====>                                                                                                                                  ]  45.75K   200KB/s                                          www.algolia.com/client-assets/7  10%[============>                                                                                                                           ]  93.75K   200KB/s                                         www.algolia.com/client-assets/72  15%[====================>                                                                                                                   ] 141.75K   200KB/s                                        www.algolia.com/client-assets/72f  20%[===========================>                                                                                                            ] 189.76K   200KB/s                                       www.algolia.com/client-assets/72ff  25%[==================================>                                                                                                     ] 237.76K   200KB/s                                      www.algolia.com/client-assets/72ffc  31%[=========================================>                                                                                              ] 285.76K   200KB/s                                     www.algolia.com/client-assets/72ffc3  36%[================================================>                                                                                       ] 333.76K   200KB/s                                    www.algolia.com/client-assets/72ffc37  41%[=======================================================>                                                                                ] 381.76K   200KB/s                                   www.algolia.com/client-assets/72ffc375  46%[==============================================================>                                                                         ] 429.76K   200KB/s                                  www.algolia.com/client-assets/72ffc3756  52%[=====================================================================>                                                                  ] 477.76K   200KB/s                                 www.algolia.com/client-assets/72ffc3756d  57%[=============================================================================>                                                          ] 525.76K   200KB/s                                www.algolia.com/client-assets/72ffc3756dd  62%[====================================================================================>                                                   ] 573.76K   200KB/s                               www.algolia.com/client-assets/72ffc3756ddd  67%[===========================================================================================>                                            ] 621.76K   200KB/s    eta 1s                    www.algolia.com/client-assets/72ffc3756ddda  73%[==================================================================================================>                                     ] 669.76K   200KB/s    eta 1s                   www.algolia.com/client-assets/72ffc3756dddaa  78%[=========================================================================================================>                              ] 717.76K   200KB/s    eta 1s                  www.algolia.com/client-assets/72ffc3756dddaa5  83%[================================================================================================================>                       ] 765.76K   200KB/s    eta 1s                 www.algolia.com/client-assets/72ffc3756dddaa55  88%[=======================================================================================================================>                ] 813.76K   200KB/s    eta 1s                www.algolia.com/client-assets/72ffc3756dddaa55e  94%[==============================================================================================================================>         ] 861.76K   200KB/s    eta 0s               www.algolia.com/client-assets/72ffc3756dddaa55e1  99%[=====================================================================================================================================>  ] 909.76K   200KB/s    eta 0s     www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c0 100%[=======================================================================================================================================>] 916.67K   201KB/s    in 4.6s    
+
+2021-11-27 08:54:09 (201 KB/s) - ‘www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/bundle-interfaceDemo-56837fb5fc4041841027.js’ saved [938667/938667]
+
+FINISHED --2021-11-27 08:54:09--
+Total wall clock time: 9.2s
+Downloaded: 18 files, 1.5M in 7.2s (221 KB/s)
+Converting links in www.algolia.com/interface-demos/6ed0c3de-f9e4-4cc8-a7b2-c6c7c979cc5e?utm_medium=page_link.html... 17-0
+Converting links in www.algolia.com/client-assets/72ffc3756dddaa55e16fc5b899c01cf1/interface-demo-bcca625f5d7b8b23da0105a3b091506d.css... nothing to do.
+Converted links in 2 files in 0.02 seconds.
