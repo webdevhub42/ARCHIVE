@@ -46,6 +46,12 @@ o.setName("Frank"); // Set the property value
 o.getName(); // => "Frank"
 console.log("o.getName(): ", o.getName());
 // o.setName(0); // !TypeError: try to set a value of the wrong type
+}
+
+
+//======================================================================================\
+
+
 
 /*
 
@@ -70,6 +76,12 @@ function arraycopy({
 let a = [1, 2, 3, 4, 5];
 let b = [9, 8, 7, 6, 5];
 arraycopy({ from: a, n: 3, to: b, toIndex: 4 }); // => [9,8,7,6,1,2,3,5]
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Define a new Object.assignDescriptors() function that works like
@@ -152,6 +164,12 @@ grep(process.stdin, process.stdout, pattern) // Call the async grep() function.
     console.error(err);
     process.exit();
   });
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * An asynchronously iterable queue class. Add values with enqueue()
@@ -295,6 +313,12 @@ const BitSet = (function() { // Set BitSet to the return value of this function
         // ... implementation omitted ...
     };
 }());
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * This Node program reads text from standard input, computes the frequency
@@ -662,6 +686,12 @@ function clock(interval, max = Infinity) {
   // Run this function again in 10 seconds
   setTimeout(updateClock, 10000);
 })(); // Note immediate invocation of the function here.
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Instances of this Complex class represent complex numbers.
@@ -759,6 +789,12 @@ function compose(f, g) {
 const sum = (x, y) => x + y;
 const square = (x) => x * x;
 compose(square, sum)(2, 3); // => 25; the square of the sum
+}
+
+
+//======================================================================================\
+
+
 
 /*
 The infinite series whose terms are the natural numbers 1 + 2 + 3 + 4 + ⋯ is a divergent series.
@@ -772,8 +808,20 @@ function constantAddUpTo(n) {
 constantAddUpTo(4); //-  constantAddUpTo(4):  10
 //console.log("constantAddUpTo(4): ", constantAddUpTo(4));
 //! Has three simple operations: 1 Multiplication 1 Addition 1 Division.
-//!(Regardless of n) Would be O(1) or Constant Time.
-/***********End of Comparing two functions that calculate the sum of all numbers from 1 up to n*******************/
+//!(Regardless of n) Would be O(1) or Constant Time.}
+
+
+//======================================================================================\
+
+
+
+/***********End of Comparing two functions that calculate the sum of all numbers from 1 up to n*******************/}
+
+
+//======================================================================================\
+
+
+
 /*
 !Simplifying Math Terms
 We want our Big-O notation to describe the performance of our algorithm with respect to the input size and nothing else.
@@ -790,7 +838,13 @@ The factors that we drop are called constant factors because their size remains 
 examples-of-big-O-simplification.png
 simplifying-a-sum.png
 simp-examples.png
-*/
+*/}
+
+
+//======================================================================================\
+
+
+
 /***********Comparing two functions with nested for loops*********************/
 function countUpAndDown(n) {
   console.log("going up!");
@@ -804,7 +858,13 @@ function countUpAndDown(n) {
   console.log("Back down, bye!");
 }
 countUpAndDown(5);
-console.log("countUpAndDown(5): ", countUpAndDown(5));
+console.log("countUpAndDown(5): ", countUpAndDown(5));}
+
+
+//======================================================================================\
+
+
+
 /*
 going up!
 0 1	2	3	4
@@ -823,18 +883,42 @@ function printAllPairs(n) {
     }
   }
 }
-printAllPairs(4);
+printAllPairs(4);}
+
+
+//======================================================================================\
+
+
+
 /*
 0 0	0 1	0 2	0 3	1 0	1 1	1 2	1 3	2 0	2 1	2 2	2 3	3 0	3 1	3 2	3 3
 */
 //!Nested loops who's number of iterations depend on the size of the input are never a good thing when trying to write fast code.
-//!O(n^2) or Quadratic Time.
-/***********END of Comparing two functions with nested for loops**********************/
+//!O(n^2) or Quadratic Time.}
+
+
+//======================================================================================\
+
+
+
+/***********END of Comparing two functions with nested for loops**********************/}
+
+
+//======================================================================================\
+
+
+
 /**************************Big-O-Operations**********************/
 //! Arithmetic Operations are Constant
 //! Variable assignment is constant
 //! Accessing elements in an array (by index) or by object (by key) is constant.
-//! In a loop, the complexity is the length of the loop times the complexity of whatever is inside of the loop.
+//! In a loop, the complexity is the length of the loop times the complexity of whatever is inside of the loop.}
+
+
+//======================================================================================\
+
+
+
 /**************************More Examples**********************/
 //---------------------logAtLeast5---------------------------------
 function logAtLeast5(n) {
@@ -843,12 +927,24 @@ function logAtLeast5(n) {
   }
 }
 //!   O(n) Linear Time
-//logAtLeast5(2);
+//logAtLeast5(2);}
+
+
+//======================================================================================\
+
+
+
 /*
 1	2	3	4	5
 ----------------------------
 */
-//logAtLeast5(6);
+//logAtLeast5(6);}
+
+
+//======================================================================================\
+
+
+
 /*
 ----------------------------
 1	2	3	4	5	6
@@ -860,11 +956,23 @@ function logAtMost5(n) {
   }
 }
 logAtMost5(20);
-//! O(1) Constant Time.
+//! O(1) Constant Time.}
+
+
+//======================================================================================\
+
+
+
 /*
 1	2	3	4	5
 */
-//***********************Big-O Complexity Classes*************************** */
+//***********************Big-O Complexity Classes*************************** */}
+
+
+//======================================================================================\
+
+
+
 /* 
 //! O(1) Constant
 The algorithm takes roughly the same number of steps for any input size.
@@ -885,7 +993,13 @@ function constant2(n) {
 //constant2(5);
 ////console.log("constant2(5): ", constant2(5));
 //1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29	30	31	32	33	34	35	36	37	38	39	40	41	42	43	44	45	46	47	48	49	50	51	52	53	54	55	56	57	58	59	60	61	62	63	64	65	66	67	68	69	70	71	72	73	74	75	76	77	78	79	80	81	82	83	84	85	86	87	88	89	90	91	92	93	94	95	96	97	98	99	100
-//------------------------------------------
+//------------------------------------------}
+
+
+//======================================================================================\
+
+
+
 /* 
 O(log(n)) Logarithmic
 In most cases our hidden base of Logarithmic time is 2, 
@@ -912,7 +1026,13 @@ logarithmic1(5);
 ////console.log("logarithmic1(5): ", logarithmic1(5)); //logarithmic1(5):  base case
 logarithmic2(6);
 ////console.log("logarithmic2(6): ", logarithmic2(6)); //logarithmic2(6):  3
-//------------------------------------------
+//------------------------------------------}
+
+
+//======================================================================================\
+
+
+
 /*
 *  O(n) Linear
 Linear algo's will access each item of the input "once".
@@ -923,7 +1043,13 @@ function linear1(n) {
     //console.log("linear1", i);
   }
 }
-linear1(3);
+linear1(3);}
+
+
+//======================================================================================\
+
+
+
 /*
 linear1 1
 linear1 2
@@ -935,7 +1061,13 @@ function linear2(array) {
     console.log("linear2", i);
   }
 }
-linear2([1, 2, 3]);
+linear2([1, 2, 3]);}
+
+
+//======================================================================================\
+
+
+
 /*
 linear2 0
 linear2 1
@@ -959,7 +1091,13 @@ function linear3(n) {
 //linear3(5)---> undefined
 //// in the two function calls above we can see that size of output corresponds to a proportional change in the size of the input
 //console.log("linear3(4): ", linear3(4)); //// linear3(4):  undefined
-//------------------------------------------
+//------------------------------------------}
+
+
+//======================================================================================\
+
+
+
 /*
 * O(nlog(n)) Log Linear Time
 Combination of linear and logarithmic behavior, 
@@ -980,7 +1118,13 @@ function loglinear(n) {
   loglinear(n / 2);
   console.log(`   new n is = (${n})`);
 }
-loglinear(4);
+loglinear(4);}
+
+
+//======================================================================================\
+
+
+
 /*
 for an input (n=4): we are on the 1'th itteration where i = 1
 for an input (n=4): we are on the 2'th itteration where i = 2
@@ -1007,7 +1151,13 @@ function loglinear(n) {
   loglinear(n / 2);
   console.log(`   Second Call : new n is = (${n})`);
 }
-//loglinear(4);
+//loglinear(4);}
+
+
+//======================================================================================\
+
+
+
 /* 
 for an input (n=4): we are on the 1'th itteration where i = 1
 for an input (n=4): we are on the 2'th itteration where i = 2
@@ -1027,7 +1177,13 @@ for an input (n=2): we are on the 2'th itteration where i = 2
    Second Call : new n is = (2)
    Second Call : new n is = (4)
 */
-//------------------------------------------
+//------------------------------------------}
+
+
+//======================================================================================\
+
+
+
 /*
 O(nc) Polynomial
 C is a fixed constant.
@@ -1048,7 +1204,13 @@ function cubic(n) {
     }
   }
 }
-cubic(3);
+cubic(3);}
+
+
+//======================================================================================\
+
+
+
 /*
 i is 1 count: 0
   for i:    1      j is:1
@@ -1090,7 +1252,13 @@ i is 3 count: 18
      itteration #26:       i: is  3,   j: is  3,     k: is   2
      itteration #27:       i: is  3,   j: is  3,     k: is   3
 */
-//------------------------------------------
+//------------------------------------------}
+
+
+//======================================================================================\
+
+
+
 /*   
 Example of Quadratic and Cubic runtime.
 !O(c^n) Exponential
@@ -1872,6 +2040,12 @@ sha256(process.argv[2], (err, hash) => {
     console.log(hash); // print the hash string.
   }
 });
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * A Set-like class that keeps track of how many times a value has
@@ -2291,6 +2465,12 @@ async function listDirectory(dirpath) {
 // we're on a little-endian platform. On a big-endian platform, we'd get
 // bytes 00 00 00 01 instead.
 let littleEndian = new Int8Array(new Int32Array([1]).buffer)[0] === 1;
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Return a Proxy object that wraps o, delegating all operations to
@@ -2361,6 +2541,12 @@ function loggingProxy(o, objname) {
   // Return a proxy for the object using these logging handlers
   return new Proxy(o, handlers);
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class represents a subrectangle of a canvas or image. We use Tiles to
@@ -2402,6 +2588,12 @@ class Tile {
     }
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class represents a pool of workers, all running the same code. The
@@ -2478,6 +2670,12 @@ class WorkerPool {
     });
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class holds the state information necessary to render a Mandelbrot set.
@@ -3149,6 +3347,12 @@ function operate2(operation, operand1, operand2) {
 
 operate2("add", "hello", operate2("add", " ", "world")); // => "hello world"
 operate2("pow", 10, 2); // => 100
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * An asynchronously iterable queue class. Add values with enqueue()
@@ -3265,6 +3469,12 @@ const BitSet = (function() { // Set BitSet to the return value of this function
         // ... implementation omitted ...
     };
 }());
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Instances of this Complex class represent complex numbers.
@@ -3416,6 +3626,12 @@ match[0]; // => "docs/js.txt"
 match[1]; // => "js"
 match.index; // => 0
 "docs/js.txt".replace(pattern, "web/$1.htm"); // => "web/js.htm"
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * A Set-like class that keeps track of how many times a value has
@@ -3478,6 +3694,12 @@ class Histogram {
     return this.map.entries();
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * A Range object represents a range of numbers {x: from <= x <= to}
@@ -3528,6 +3750,12 @@ class Range {
 
 for (let x of new Range(1, 10)) console.log(x); // Logs numbers 1 to 10
 [...new Range(-2, 2)]; // => [-2, -1, 0, 1, 2]
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * The AbstractSet class defines a single abstract method, has().
@@ -3539,6 +3767,12 @@ class AbstractSet {
     throw new Error("Abstract method");
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * NotSet is a concrete subclass of AbstractSet.
@@ -3563,6 +3797,12 @@ class NotSet extends AbstractSet {
     return `{ x| x ∉ ${this.set.toString()} }`;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Range set is a concrete subclass of AbstractSet. Its members are
@@ -3584,6 +3824,12 @@ class RangeSet extends AbstractSet {
     return `{ x| ${this.from} ≤ x ≤ ${this.to} }`;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * AbstractEnumerableSet is an abstract subclass of AbstractSet.  It defines
@@ -3624,6 +3870,12 @@ class AbstractEnumerableSet extends AbstractSet {
     return true;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * SingletonSet is a concrete subclass of AbstractEnumerableSet.
@@ -3647,6 +3899,12 @@ class SingletonSet extends AbstractEnumerableSet {
     yield this.member;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * AbstractWritableSet is an abstract subclass of AbstractEnumerableSet.
@@ -3683,6 +3941,12 @@ class AbstractWritableSet extends AbstractEnumerableSet {
     }
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * A BitSet is a concrete subclass of AbstractWritableSet with a
@@ -3802,6 +4066,12 @@ Span.prototype.constructor = Span;
 Span.prototype.toString = function () {
   return `(${this.from}... +${this.to - this.from})`;
 };
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * TOC.js: create a table of contents for a document.
@@ -4016,6 +4286,12 @@ function arraycopy({
 let a = [1, 2, 3, 4, 5];
 let b = [9, 8, 7, 6, 5];
 arraycopy({ from: a, n: 3, to: b, toIndex: 4 }); // => [9,8,7,6,1,2,3,5]
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Define a new Object.assignDescriptors() function that works like
@@ -4125,6 +4401,12 @@ if (threads.isMainThread) {
   }
   threads.parentPort.postMessage("done");
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * This Node program reads text from standard input, computes the frequency
@@ -5542,6 +5824,12 @@ async function listDirectory(dirpath) {
 // we're on a little-endian platform. On a big-endian platform, we'd get
 // bytes 00 00 00 01 instead.
 let littleEndian = new Int8Array(new Int32Array([1]).buffer)[0] === 1;
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Return a Proxy object that wraps o, delegating all operations to
@@ -5612,6 +5900,12 @@ function loggingProxy(o, objname) {
   // Return a proxy for the object using these logging handlers
   return new Proxy(o, handlers);
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class represents a subrectangle of a canvas or image. We use Tiles to
@@ -5653,6 +5947,12 @@ class Tile {
     }
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class represents a pool of workers, all running the same code. The
@@ -5729,6 +6029,12 @@ class WorkerPool {
     });
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * This class holds the state information necessary to render a Mandelbrot set.
@@ -6556,6 +6862,12 @@ let stddev = sqrt(
   )
 );
 [mean, stddev]; // => [3, 2]
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Create an <svg> element and draw a pie chart into it.
@@ -6723,6 +7035,12 @@ c.fill(); // Fill the shapes
 c.stroke(); // And stroke their outlines
 
 const https = require("https");
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Convert the body object to a JSON string then HTTPS POST it to the
@@ -7054,6 +7372,12 @@ p.x = 2; // !TypeError: can't change properties
 delete p.y; // !TypeError: can't delete properties
 p.z = 3; // !TypeError: can't add properties
 p.__proto__ = {}; // !TypeError: can't change the prototype
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * This class defines a custom HTML <search-box> element that displays an
@@ -7219,7 +7543,13 @@ SearchBox.template = document.createElement("template");
 // that when we instantiate a SearchBox, we are able to just clone the nodes
 // in the template and do have to parse the HTML again.
 SearchBox.template.innerHTML = `
-<style>
+<style>}
+
+
+//======================================================================================\
+
+
+
 /*
  * The :host selector refers to the <search-box> element in the light
  * DOM. These styles are defaults and can be overridden by the user of the
@@ -7240,6 +7570,12 @@ SearchBox.template.innerHTML = `
 :host([focused]) {         /* When host has the focused attribute... */
   box-shadow: 0 0 2px 2px #6AE;  /* display this fake focus ring. */
 }
+}
+
+
+//======================================================================================\
+
+
 
 /* The rest of the stylesheet only applies to elements in the Shadow DOM. */
 input {
@@ -7647,6 +7983,12 @@ let stddev = Math.sqrt(
   reduce(map(deviations, square), sum) / (data.length - 1)
 );
 stddev; // => 2
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * An asynchronous function for streaming the body of a Response object
@@ -8358,6 +8700,12 @@ let stddev = sqrt(
   )
 );
 [mean, stddev]; // => [3, 2]
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Create an <svg> element and draw a pie chart into it.
@@ -8525,6 +8873,12 @@ c.fill(); // Fill the shapes
 c.stroke(); // And stroke their outlines
 
 const https = require("https");
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * Convert the body object to a JSON string then HTTPS POST it to the
@@ -8784,6 +9138,12 @@ class Range {
     return `(${this.from}...${this.to})`;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * A Range object represents a range of numbers {x: from <= x <= to}
@@ -8906,6 +9266,12 @@ p.x = 2; // !TypeError: can't change properties
 delete p.y; // !TypeError: can't delete properties
 p.z = 3; // !TypeError: can't add properties
 p.__proto__ = {}; // !TypeError: can't change the prototype
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * This class defines a custom HTML <search-box> element that displays an
@@ -9071,7 +9437,13 @@ SearchBox.template = document.createElement("template");
 // that when we instantiate a SearchBox, we are able to just clone the nodes
 // in the template and do have to parse the HTML again.
 SearchBox.template.innerHTML = `
-<style>
+<style>}
+
+
+//======================================================================================\
+
+
+
 /*
  * The :host selector refers to the <search-box> element in the light
  * DOM. These styles are defaults and can be overridden by the user of the
@@ -9092,6 +9464,12 @@ SearchBox.template.innerHTML = `
 :host([focused]) {         /* When host has the focused attribute... */
   box-shadow: 0 0 2px 2px #6AE;  /* display this fake focus ring. */
 }
+}
+
+
+//======================================================================================\
+
+
 
 /* The rest of the stylesheet only applies to elements in the Shadow DOM. */
 input {
@@ -9157,6 +9535,12 @@ function setCookie(name, value, daysToLive = null) {
   }
   document.cookie = cookie;
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * The AbstractSet class defines a single abstract method, has().
@@ -9168,6 +9552,12 @@ class AbstractSet {
     throw new Error("Abstract method");
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * NotSet is a concrete subclass of AbstractSet.
@@ -9192,6 +9582,12 @@ class NotSet extends AbstractSet {
     return `{ x| x ∉ ${this.set.toString()} }`;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * Range set is a concrete subclass of AbstractSet. Its members are
@@ -9213,6 +9609,12 @@ class RangeSet extends AbstractSet {
     return `{ x| ${this.from} ≤ x ≤ ${this.to} }`;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * AbstractEnumerableSet is an abstract subclass of AbstractSet.  It defines
@@ -9253,6 +9655,12 @@ class AbstractEnumerableSet extends AbstractSet {
     return true;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * SingletonSet is a concrete subclass of AbstractEnumerableSet.
@@ -9276,6 +9684,12 @@ class SingletonSet extends AbstractEnumerableSet {
     yield this.member;
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /*
  * AbstractWritableSet is an abstract subclass of AbstractEnumerableSet.
@@ -9312,6 +9726,12 @@ class AbstractWritableSet extends AbstractEnumerableSet {
     }
   }
 }
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * A BitSet is a concrete subclass of AbstractWritableSet with a
@@ -9777,6 +10197,12 @@ const stats = (function () {
 // And here is how we might use the module
 stats.mean([1, 3, 5, 7, 9]); // => 5
 stats.stddev([1, 3, 5, 7, 9]); // => Math.sqrt(10)
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * An asynchronous function for streaming the body of a Response object
@@ -9916,6 +10342,12 @@ function benchmark(n) {
 
 // Now invoke the timed version of that test function
 timed(benchmark)(1000000); // => 500000500000; this is the sum of the numbers
+}
+
+
+//======================================================================================\
+
+
 
 /**
  * TOC.js: create a table of contents for a document.
