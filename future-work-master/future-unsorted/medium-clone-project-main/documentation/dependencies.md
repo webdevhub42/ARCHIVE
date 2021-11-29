@@ -1,0 +1,20 @@
+## Dependencies
+- express
+- cookie-parser
+- csurf
+- bcrypt
+- express-validator
+- jsonwebtoken
+- express-bearer-token
+- per-env
+- sequelize@^5
+- pg
+- pug@^2
+
+## Dev-dependencies
+- nodemon
+- morgan
+- sass
+- dotenv
+- dotenv-cli
+- sequelize-cli@^5
