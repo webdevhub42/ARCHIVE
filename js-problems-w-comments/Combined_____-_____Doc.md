@@ -2458,7 +2458,6 @@ async function listDirectory(dirpath) {
 }
 
 
-//======================================================================================\
 
 
 // If the integer 0x00000001 is arranged in memory as 01 00 00 00, then
