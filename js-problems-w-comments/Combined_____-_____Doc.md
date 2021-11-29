@@ -973,7 +973,7 @@ logAtMost5(20);
 
 
 
-/* 
+/*
 //! O(1) Constant
 The algorithm takes roughly the same number of steps for any input size.
 */
@@ -1000,10 +1000,10 @@ function constant2(n) {
 
 
 
-/* 
+/*
 O(log(n)) Logarithmic
-In most cases our hidden base of Logarithmic time is 2, 
-log complexity algo's will typically display 'halving' the size of the input ?? 
+In most cases our hidden base of Logarithmic time is 2,
+log complexity algo's will typically display 'halving' the size of the input ??
 ? (like binary search!)
 */
 // O(log(n))
@@ -1100,7 +1100,7 @@ function linear3(n) {
 
 /*
 * O(nlog(n)) Log Linear Time
-Combination of linear and logarithmic behavior, 
+Combination of linear and logarithmic behavior,
 we will see features from both classes.
 !Algorithm's that are log-linear will use both recursion AND iteration.
  */
@@ -1158,7 +1158,7 @@ function loglinear(n) {
 
 
 
-/* 
+/*
 for an input (n=4): we are on the 1'th itteration where i = 1
 for an input (n=4): we are on the 2'th itteration where i = 2
 for an input (n=4): we are on the 3'th itteration where i = 3
@@ -1259,7 +1259,7 @@ i is 3 count: 18
 
 
 
-/*   
+/*
 Example of Quadratic and Cubic runtime.
 !O(c^n) Exponential
 C is now the number of recursive calls made in each stack frame.
