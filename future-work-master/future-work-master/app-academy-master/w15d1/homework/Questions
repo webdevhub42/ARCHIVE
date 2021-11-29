@@ -1,0 +1,15 @@
+Would we export by just putting the export keyword infront of the class instead of exporting at the bottom?
+
+What's with a curly brackets for the const FruitManager in the components.
+const FruitManager = ({ fruit }) => {
+  return (
+    <div>
+      <h2>Available Fruit</h2>
+      <FruitList fruit={fruit} />
+      <h2>Fruit Inventory Manager</h2>
+      <FruitSeller />
+      <FruitQuickAdd />
+      <FruitBulkAdd />
+    </div>
+  );
+};
