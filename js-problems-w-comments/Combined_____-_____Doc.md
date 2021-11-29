@@ -31,6 +31,10 @@ function addPrivateProperty(o, name, predicate) {
   };
 }
 
+
+//======================================================================================\
+
+
 // The following code demonstrates the addPrivateProperty() method.
 let o = {}; // Here is an empty object
 
@@ -228,6 +232,10 @@ class AsyncQueue {
   }
 }
 
+
+//======================================================================================\
+
+
 // A sentinel value returned by dequeue() to mark "end of stream" when closed
 AsyncQueue.EOS = Symbol("end-of-stream");
 
@@ -315,6 +323,10 @@ class DefaultMap extends Map {
   }
 }
 
+
+//======================================================================================\
+
+
 // This class computes and displays letter frequency histograms
 class Histogram {
   constructor() {
@@ -370,6 +382,10 @@ class Histogram {
   }
 }
 
+
+//======================================================================================\
+
+
 // This async (Promise-returning) function creates a Histogram object,
 // asynchronously reads chunks of text from standard input, and adds those chunks to
 // the histogram. When it reaches the end of the stream, it returns this histogram
@@ -381,6 +397,10 @@ async function histogramFromStdin() {
   }
   return histogram;
 }
+
+
+//======================================================================================\
+
 
 // This one final line of code is the main body of the program.
 // It makes a Histogram object from standard input, then prints the histogram.
@@ -462,6 +482,10 @@ function acceptNewClient(request, response) {
   // Keeping the connection open is what makes Server-Sent Events work.
 }
 
+
+//======================================================================================\
+
+
 // This function is called in response to POST requests to the /chat endpoint
 // which clients send when users type a new message.
 async function broadcastNewMessage(request, response) {
@@ -486,6 +510,10 @@ async function broadcastNewMessage(request, response) {
   // Now send this event to all listening clients
   clients.forEach((client) => client.write(event));
 }
+
+
+//======================================================================================\
+
 
 // Wait for messages from our parent process
 process.on("message", (message) => {
@@ -555,6 +583,10 @@ function elapsedTime(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+
+//======================================================================================\
+
+
 // An async generator function that increments a counter and yields it
 // a specified (or infinite) number of times at a specified interval.
 async function* clock(interval, max = Infinity) {
@@ -564,6 +596,10 @@ async function* clock(interval, max = Infinity) {
     yield count; // yield the counter
   }
 }
+
+
+//======================================================================================\
+
 
 // A test function that uses the async generator with for/await
 async function test() {
@@ -698,6 +734,10 @@ class Complex {
   // define a useful Complex.ZERO constant like this:
   // static ZERO = new Complex(0,0);
 }
+
+
+//======================================================================================\
+
 
 // Here are some class fields that hold useful predefined complex numbers.
 Complex.ZERO = new Complex(0, 0);
@@ -1133,6 +1173,10 @@ function copyFile(sourceFilename, destinationFilename, callback) {
   });
 }
 
+
+//======================================================================================\
+
+
 // Here's a simple command-line utility to copy files
 let from = process.argv[2],
   to = process.argv[3];
@@ -1163,6 +1207,10 @@ function write(stream, chunk) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Copy data from the source stream to the destination stream
 // respecting backpressure from the destination stream.
 // This is much like calling source.pipe(destination).
@@ -1177,6 +1225,10 @@ async function copy(source, destination) {
     await write(destination, chunk);
   }
 }
+
+
+//======================================================================================\
+
 
 // Copy standard input to standard output
 copy(process.stdin, process.stdout);
@@ -1227,6 +1279,10 @@ d.count(); // => 1: d was not reset
 function rads(x) {
   return (Math.PI * x) / 180;
 }
+
+
+//======================================================================================\
+
 
 // Get the context object of the document's canvas element
 let c = document.querySelector("canvas").getContext("2d");
@@ -1310,6 +1366,10 @@ function toPolar(x, y) {
   return [Math.sqrt(x * x + y * y), Math.atan2(y, x)];
 }
 
+
+//======================================================================================\
+
+
 // Convert polar to Cartesian coordinates
 function toCartesian(r, theta) {
   return [r * Math.cos(theta), r * Math.sin(theta)];
@@ -1325,6 +1385,10 @@ function printprops(o) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Compute the distance between Cartesian points (x1,y1) and (x2,y2).
 function distance(x1, y1, x2, y2) {
   let dx = x2 - x1;
@@ -1332,12 +1396,20 @@ function distance(x1, y1, x2, y2) {
   return Math.sqrt(dx * dx + dy * dy);
 }
 
+
+//======================================================================================\
+
+
 // A recursive function (one that calls itself) that computes factorials
 // Recall that x! is the product of x and all positive integers less than it.
 function factorial(x) {
   if (x <= 1) return 1;
   return x * factorial(x - 1);
 }
+
+
+//======================================================================================\
+
 
 // A trivial Array subclass that adds getters for the first and last elements.
 class EZArray extends Array {
@@ -1471,6 +1543,10 @@ function* fibonacciSequence() {
   }
 }
 
+
+//======================================================================================\
+
+
 // Return an iterable object that filters the specified iterable,
 // iterating only those elements for which the predicate returns true
 function filter(iterable, predicate) {
@@ -1491,6 +1567,10 @@ function filter(iterable, predicate) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Filter a range so we're left with only even numbers
 [...filter(new Range(1, 10), (x) => x % 2 === 0)]; // => [2,4,6,8,10]
 
@@ -1509,6 +1589,10 @@ function findall(a, x) {
   }
   return results; // Return array of indexes
 }
+
+
+//======================================================================================\
+
 
 // Return the document's cookies as a Map object.
 // Assume that cookie values are encoded with encodeURIComponent().
@@ -1718,6 +1802,10 @@ class GrepStream extends stream.Transform {
   }
 }
 
+
+//======================================================================================\
+
+
 // Now we can write a program like 'grep' with this class.
 let pattern = new RegExp(process.argv[2]); // Get a RegExp from command line.
 process.stdin // Start with standard input,
@@ -1768,6 +1856,10 @@ function sha256(filename, callback) {
   });
   input.on("error", callback); // On error, call callback
 }
+
+
+//======================================================================================\
+
 
 // Here's a simple command-line utility to compute the hash of a file
 sha256(process.argv[2], (err, hash) => {
@@ -2034,6 +2126,10 @@ function isArrayLike(o) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Connect to the joke port (6789) on the server named on the command line
 let socket = require("net").createConnection(6789, process.argv[2]);
 socket.pipe(process.stdout); // Pipe data from the socket to stdout
@@ -2186,6 +2282,10 @@ async function listDirectory(dirpath) {
     console.log(String(size).padStart(10), name);
   }
 }
+
+
+//======================================================================================\
+
 
 // If the integer 0x00000001 is arranged in memory as 01 00 00 00, then
 // we're on a little-endian platform. On a big-endian platform, we'd get
@@ -2433,6 +2533,10 @@ class PageState {
     return u.href;
   }
 }
+
+
+//======================================================================================\
+
 
 // These constants control the parallelism of the Mandelbrot set computation.
 // You may need to adjust them to get optimum performance on your computer.
@@ -2773,6 +2877,10 @@ class MandelbrotCanvas {
   }
 }
 
+
+//======================================================================================\
+
+
 // Finally, here's how we set up the canvas. Note that this JavaScript file
 // is self-sufficient. The HTML file only needs to include this one <script>.
 let canvas = document.createElement("canvas"); // Create a canvas element
@@ -2874,6 +2982,10 @@ function map(iterable, f) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Map a range of integers to their squares and convert to an array
 [...map(new Range(1, 4), (x) => x * x)]; // => [1, 4, 9, 16]
 
@@ -2905,6 +3017,10 @@ function memoize(f) {
     }
   };
 }
+
+
+//======================================================================================\
+
 
 // Return the Greatest Common Divisor of two integers using the Euclidian
 // algorithm: http://en.wikipedia.org/wiki/Euclidean_algorithm
@@ -2946,6 +3062,10 @@ function merge(target, ...sources) {
 }
 Object.assign({ x: 1 }, { x: 2, y: 2 }, { y: 3, z: 4 }); // => {x: 2, y: 3, z: 4}
 merge({ x: 1 }, { x: 2, y: 2 }, { y: 3, z: 4 }); // => {x: 1, y: 2, z: 4}
+
+
+//======================================================================================\
+
 
 // This higher-order function returns a new function that passes its
 // arguments to f and returns the logical negation of f's return value;
@@ -2991,11 +3111,19 @@ function divide(x, y) {
   return x / y;
 }
 
+
+//======================================================================================\
+
+
 // Here's a function that takes one of the preceding functions
 // as an argument and invokes it on two operands
 function operate(operator, operand1, operand2) {
   return operator(operand1, operand2);
 }
+
+
+//======================================================================================\
+
 
 // We could invoke this function like this to compute the value (2+3) + (4*5):
 let i = operate(add, operate(add, 2, 3), operate(multiply, 4, 5));
@@ -3101,6 +3229,10 @@ class AsyncQueue {
   }
 }
 
+
+//======================================================================================\
+
+
 // A sentinel value returned by dequeue() to mark "end of stream" when closed
 AsyncQueue.EOS = Symbol("end-of-stream");
 
@@ -3205,6 +3337,10 @@ class Complex {
   // define a useful Complex.ZERO constant like this:
   // static ZERO = new Complex(0,0);
 }
+
+
+//======================================================================================\
+
 
 // Here are some class fields that hold useful predefined complex numbers.
 Complex.ZERO = new Complex(0, 0);
@@ -3631,6 +3767,10 @@ class BitSet extends AbstractWritableSet {
   }
 }
 
+
+//======================================================================================\
+
+
 // Some pre-computed values used by the has(), insert() and remove() methods
 BitSet.bits = new Uint8Array([1, 2, 4, 8, 16, 32, 64, 128]);
 BitSet.masks = new Uint8Array([~1, ~2, ~4, ~8, ~16, ~32, ~64, ~128]);
@@ -3645,6 +3785,10 @@ function Span(start, span) {
     this.from = start + span;
   }
 }
+
+
+//======================================================================================\
+
 
 // Ensure that the Span prototype inherits from the Range prototype
 Span.prototype = Object.create(Range.prototype);
@@ -3807,6 +3951,10 @@ class TypedMap extends Map {
   }
 }
 
+
+//======================================================================================\
+
+
 // This function adds property accessor methods for a property with
 // the specified name to the object o. The methods are named get<name>
 // and set<name>. If a predicate function is supplied, the setter
@@ -3838,6 +3986,10 @@ function addPrivateProperty(o, name, predicate) {
     }
   };
 }
+
+
+//======================================================================================\
+
 
 // The following code demonstrates the addPrivateProperty() method.
 let o = {}; // Here is an empty object
@@ -4001,6 +4153,10 @@ class DefaultMap extends Map {
   }
 }
 
+
+//======================================================================================\
+
+
 // This class computes and displays letter frequency histograms
 class Histogram {
   constructor() {
@@ -4056,6 +4212,10 @@ class Histogram {
   }
 }
 
+
+//======================================================================================\
+
+
 // This async (Promise-returning) function creates a Histogram object,
 // asynchronously reads chunks of text from standard input, and adds those chunks to
 // the histogram. When it reaches the end of the stream, it returns this histogram
@@ -4067,6 +4227,10 @@ async function histogramFromStdin() {
   }
   return histogram;
 }
+
+
+//======================================================================================\
+
 
 // This one final line of code is the main body of the program.
 // It makes a Histogram object from standard input, then prints the histogram.
@@ -4148,6 +4312,10 @@ function acceptNewClient(request, response) {
   // Keeping the connection open is what makes Server-Sent Events work.
 }
 
+
+//======================================================================================\
+
+
 // This function is called in response to POST requests to the /chat endpoint
 // which clients send when users type a new message.
 async function broadcastNewMessage(request, response) {
@@ -4172,6 +4340,10 @@ async function broadcastNewMessage(request, response) {
   // Now send this event to all listening clients
   clients.forEach((client) => client.write(event));
 }
+
+
+//======================================================================================\
+
 
 // Wait for messages from our parent process
 process.on("message", (message) => {
@@ -4262,6 +4434,10 @@ function elapsedTime(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+
+//======================================================================================\
+
+
 // An async generator function that increments a counter and yields it
 // a specified (or infinite) number of times at a specified interval.
 async function* clock(interval, max = Infinity) {
@@ -4271,6 +4447,10 @@ async function* clock(interval, max = Infinity) {
     yield count; // yield the counter
   }
 }
+
+
+//======================================================================================\
+
 
 // A test function that uses the async generator with for/await
 async function test() {
@@ -4313,6 +4493,10 @@ function clock(interval, max = Infinity) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Return a new function that computes f(g(...)).
 // The returned function h passes all of its arguments to g, then passes
 // the return value of g to f, then returns the return value of f.
@@ -4347,6 +4531,10 @@ function write(stream, chunk) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Copy data from the source stream to the destination stream
 // respecting backpressure from the destination stream.
 // This is much like calling source.pipe(destination).
@@ -4361,6 +4549,10 @@ async function copy(source, destination) {
     await write(destination, chunk);
   }
 }
+
+
+//======================================================================================\
+
 
 // Copy standard input to standard output
 copy(process.stdin, process.stdout);
@@ -4407,6 +4599,10 @@ function copyFile(sourceFilename, destinationFilename, callback) {
     callback(null); // call the callback with no error.
   });
 }
+
+
+//======================================================================================\
+
 
 // Here's a simple command-line utility to copy files
 let from = process.argv[2],
@@ -4466,6 +4662,10 @@ c.count = 2000; // !Error: count can only be set to a larger value
 function rads(x) {
   return (Math.PI * x) / 180;
 }
+
+
+//======================================================================================\
+
 
 // Get the context object of the document's canvas element
 let c = document.querySelector("canvas").getContext("2d");
@@ -4549,6 +4749,10 @@ function toPolar(x, y) {
   return [Math.sqrt(x * x + y * y), Math.atan2(y, x)];
 }
 
+
+//======================================================================================\
+
+
 // Convert polar to Cartesian coordinates
 function toCartesian(r, theta) {
   return [r * Math.cos(theta), r * Math.sin(theta)];
@@ -4564,6 +4768,10 @@ function printprops(o) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Compute the distance between Cartesian points (x1,y1) and (x2,y2).
 function distance(x1, y1, x2, y2) {
   let dx = x2 - x1;
@@ -4571,12 +4779,20 @@ function distance(x1, y1, x2, y2) {
   return Math.sqrt(dx * dx + dy * dy);
 }
 
+
+//======================================================================================\
+
+
 // A recursive function (one that calls itself) that computes factorials
 // Recall that x! is the product of x and all positive integers less than it.
 function factorial(x) {
   if (x <= 1) return 1;
   return x * factorial(x - 1);
 }
+
+
+//======================================================================================\
+
 
 // Compute factorials and cache results as properties of the function itself.
 function factorial(n) {
@@ -4680,6 +4896,10 @@ function* fibonacciSequence() {
   }
 }
 
+
+//======================================================================================\
+
+
 // Return an iterable object that filters the specified iterable,
 // iterating only those elements for which the predicate returns true
 function filter(iterable, predicate) {
@@ -4700,6 +4920,10 @@ function filter(iterable, predicate) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Filter a range so we're left with only even numbers
 [...filter(new Range(1, 10), (x) => x % 2 === 0)]; // => [2,4,6,8,10]
 
@@ -4718,6 +4942,10 @@ function findall(a, x) {
   }
   return results; // Return array of indexes
 }
+
+
+//======================================================================================\
+
 
 // Return the document's cookies as a Map object.
 // Assume that cookie values are encoded with encodeURIComponent().
@@ -4887,6 +5115,10 @@ class GrepStream extends stream.Transform {
   }
 }
 
+
+//======================================================================================\
+
+
 // Now we can write a program like 'grep' with this class.
 let pattern = new RegExp(process.argv[2]); // Get a RegExp from command line.
 process.stdin // Start with standard input,
@@ -4937,6 +5169,10 @@ function sha256(filename, callback) {
   });
   input.on("error", callback); // On error, call callback
 }
+
+
+//======================================================================================\
+
 
 // Here's a simple command-line utility to compute the hash of a file
 sha256(process.argv[2], (err, hash) => {
@@ -5141,6 +5377,10 @@ function isArrayLike(o) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Connect to the joke port (6789) on the server named on the command line
 let socket = require("net").createConnection(6789, process.argv[2]);
 socket.pipe(process.stdout); // Pipe data from the socket to stdout
@@ -5293,6 +5533,10 @@ async function listDirectory(dirpath) {
     console.log(String(size).padStart(10), name);
   }
 }
+
+
+//======================================================================================\
+
 
 // If the integer 0x00000001 is arranged in memory as 01 00 00 00, then
 // we're on a little-endian platform. On a big-endian platform, we'd get
@@ -5540,6 +5784,10 @@ class PageState {
     return u.href;
   }
 }
+
+
+//======================================================================================\
+
 
 // These constants control the parallelism of the Mandelbrot set computation.
 // You may need to adjust them to get optimum performance on your computer.
@@ -5880,6 +6128,10 @@ class MandelbrotCanvas {
   }
 }
 
+
+//======================================================================================\
+
+
 // Finally, here's how we set up the canvas. Note that this JavaScript file
 // is self-sufficient. The HTML file only needs to include this one <script>.
 let canvas = document.createElement("canvas"); // Create a canvas element
@@ -5981,6 +6233,10 @@ function map(iterable, f) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Map a range of integers to their squares and convert to an array
 [...map(new Range(1, 4), (x) => x * x)]; // => [1, 4, 9, 16]
 
@@ -6012,6 +6268,10 @@ function memoize(f) {
     }
   };
 }
+
+
+//======================================================================================\
+
 
 // Return the Greatest Common Divisor of two integers using the Euclidian
 // algorithm: http://en.wikipedia.org/wiki/Euclidean_algorithm
@@ -6053,6 +6313,10 @@ function merge(target, ...sources) {
 }
 Object.assign({ x: 1 }, { x: 2, y: 2 }, { y: 3, z: 4 }); // => {x: 2, y: 3, z: 4}
 merge({ x: 1 }, { x: 2, y: 2 }, { y: 3, z: 4 }); // => {x: 1, y: 2, z: 4}
+
+
+//======================================================================================\
+
 
 // This higher-order function returns a new function that passes its
 // arguments to f and returns the logical negation of f's return value;
@@ -6098,11 +6362,19 @@ function divide(x, y) {
   return x / y;
 }
 
+
+//======================================================================================\
+
+
 // Here's a function that takes one of the preceding functions
 // as an argument and invokes it on two operands
 function operate(operator, operand1, operand2) {
   return operator(operand1, operand2);
 }
+
+
+//======================================================================================\
+
 
 // We could invoke this function like this to compute the value (2+3) + (4*5):
 let i = operate(add, operate(add, 2, 3), operate(multiply, 4, 5));
@@ -6212,6 +6484,10 @@ function partialLeft(f, ...outerArgs) {
   };
 }
 
+
+//======================================================================================\
+
+
 // The arguments to this function are passed on the right
 function partialRight(f, ...outerArgs) {
   return function (...innerArgs) {
@@ -6220,6 +6496,10 @@ function partialRight(f, ...outerArgs) {
     return f.apply(this, args); // Then invoke f with it
   };
 }
+
+
+//======================================================================================\
+
 
 // The arguments to this function serve as a template. Undefined values
 // in the argument list are filled in with values from the inner set.
@@ -6236,6 +6516,10 @@ function partial(f, ...outerArgs) {
     return f.apply(this, args);
   };
 }
+
+
+//======================================================================================\
+
 
 // Here is a function with three arguments
 const f = function (x, y, z) {
@@ -6389,6 +6673,10 @@ function pipe(readable, writable, callback) {
     .on("finish", callback);
 }
 
+
+//======================================================================================\
+
+
 // Define a regular polygon with n sides, centered at (x,y) with radius r.
 // The vertices are equally spaced along the circumference of a circle.
 // Put the first vertex straight up or at the specified angle.
@@ -6409,6 +6697,10 @@ function polygon(c, n, x, y, r, angle = 0, counterclockwise = false) {
   }
   c.closePath(); // Connect last vertex back to the first
 }
+
+
+//======================================================================================\
+
 
 // Assume there is just one canvas, and get its context object to draw with.
 let c = document.querySelector("canvas").getContext("2d");
@@ -6515,6 +6807,10 @@ function postJSON(host, endpoint, body, port, username, password) {
   });
 }
 
+
+//======================================================================================\
+
+
 // This function takes an array of input values and a "promiseMaker" function.
 // For any input value x in the array, promiseMaker(x) should return a Promise
 // that will fulfill to an output value. This function returns a Promise
@@ -6603,6 +6899,10 @@ function range(from, to) {
   return r;
 }
 
+
+//======================================================================================\
+
+
 // This prototype object defines methods inherited by all range objects.
 range.methods = {
   // Return true if x is in the range, false otherwise
@@ -6631,6 +6931,10 @@ function Range(from, to) {
   this.from = from;
   this.to = to;
 }
+
+
+//======================================================================================\
+
 
 // All Range objects inherit from this object.
 // Note that the property name must be "prototype" for this to work.
@@ -6899,6 +7203,10 @@ class SearchBox extends HTMLElement {
   }
 }
 
+
+//======================================================================================\
+
+
 // This static field is required for the attributeChangedCallback method.
 // Only attributes named in this array will trigger calls to that method.
 SearchBox.observedAttributes = ["disabled", "placeholder", "size", "value"];
@@ -7032,6 +7340,10 @@ async function search(term) {
   return resultsArray;
 }
 
+
+//======================================================================================\
+
+
 // Return the largest prime smaller than n, using the sieve of Eratosthenes
 function sieve(n) {
   let a = new Uint8Array(n + 1); // a[x] will be 1 if x is composite
@@ -7050,6 +7362,10 @@ function sieve(n) {
   while (a[n]) n--; // Loop backward to find the last prime
   return n; // And return it
 }
+
+
+//======================================================================================\
+
 
 // Smear the pixels of the rectangle to the right, producing a
 // sort of motion blur as if objects are moving from right to left.
@@ -7139,6 +7455,10 @@ if (threads.isMainThread) {
     threads.parentPort.postMessage(splines);
   });
 }
+
+
+//======================================================================================\
+
 
 // This is a simple static HTTP server that serves files from a specified
 // directory. It also implements a special /test/mirror endpoint that
@@ -7245,6 +7565,10 @@ function serve(rootDirectory, port) {
     }
   });
 }
+
+
+//======================================================================================\
+
 
 // When we're invoked from the command line, call the serve() function
 serve(process.argv[2] || "/tmp", parseInt(process.argv[3]) || 8000);
@@ -7385,6 +7709,10 @@ async function streamBody(response, reportProgress, processChunk) {
   return body; // Return the body text we accumulated
 }
 
+
+//======================================================================================\
+
+
 // Yield the first n elements of the specified iterable object
 function* take(n, iterable) {
   let it = iterable[Symbol.iterator](); // Get iterator for iterable object
@@ -7396,6 +7724,10 @@ function* take(n, iterable) {
     else yield next.value; // otherwise, yield the value
   }
 }
+
+
+//======================================================================================\
+
 
 // An array of the first 5 Fibonacci numbers
 [...take(5, fibonacciSequence())]; // => [1, 1, 2, 3, 5]
@@ -7417,6 +7749,10 @@ function textContent(e) {
   return s;
 }
 
+
+//======================================================================================\
+
+
 // This function takes a function and returns a wrapped version
 function timed(f) {
   return function (...args) {
@@ -7433,12 +7769,20 @@ function timed(f) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Compute the sum of the numbers between 1 and n by brute force
 function benchmark(n) {
   let sum = 0;
   for (let i = 1; i <= n; i++) sum += i;
   return sum;
 }
+
+
+//======================================================================================\
+
 
 // Now invoke the timed version of that test function
 timed(benchmark)(1000000); // => 500000500000; this is the sum of the numbers
@@ -7456,12 +7800,20 @@ function trace(o, m) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Shear transform:
 //   x' = x + kx*y;
 //   y' = ky*x + y;
 function shear(c, kx, ky) {
   c.transform(1, ky, kx, 1, 0, 0);
 }
+
+
+//======================================================================================\
+
 
 // Rotate theta radians counterclockwise around the point (x,y)
 // This can also be accomplished with a translate, rotate, translate sequence
@@ -7470,6 +7822,10 @@ function rotateAbout(c, theta, x, y) {
   let st = Math.sin(theta);
   c.transform(ct, -st, st, ct, -x * ct - y * st + x, x * st - y * ct + y);
 }
+
+
+//======================================================================================\
+
 
 // Recursively traverse the Document or Element e, invoking the function
 // f on e and on each of its descendants
@@ -7489,6 +7845,10 @@ function traverse2(e, f) {
     child = child.nextElementSibling;
   }
 }
+
+
+//======================================================================================\
+
 
 // Initialize the counter property of the function object.
 // Function declarations are hoisted so we really can
@@ -7521,6 +7881,10 @@ async function getCanvasBlob(canvas) {
   });
 }
 
+
+//======================================================================================\
+
+
 // Here is how we upload a PNG file from a canvas
 async function uploadCanvasImage(canvas) {
   let pngblob = await getCanvasBlob(canvas);
@@ -7544,6 +7908,10 @@ function wait(duration) {
     setTimeout(resolve, duration);
   });
 }
+
+
+//======================================================================================\
+
 
 // Begin by creating an audioContext object. Safari still requires
 // us to use webkitAudioContext instead of AudioContext.
@@ -7657,6 +8025,10 @@ function* zip(...iterables) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Interleave three iterable objects
 [...zip(oneDigitPrimes(), "ab", [0])]; // => [2,"a",0,3,"b",5,7]
 
@@ -7679,6 +8051,10 @@ function withDB(callback) {
     initdb(request.result, callback);
   };
 }
+
+
+//======================================================================================\
+
 
 // withDB() calls this function if the database has not been initialized yet.
 // We set up the database and populate it with data, then pass the database to
@@ -7910,6 +8286,10 @@ function partialLeft(f, ...outerArgs) {
   };
 }
 
+
+//======================================================================================\
+
+
 // The arguments to this function are passed on the right
 function partialRight(f, ...outerArgs) {
   return function (...innerArgs) {
@@ -7918,6 +8298,10 @@ function partialRight(f, ...outerArgs) {
     return f.apply(this, args); // Then invoke f with it
   };
 }
+
+
+//======================================================================================\
+
 
 // The arguments to this function serve as a template. Undefined values
 // in the argument list are filled in with values from the inner set.
@@ -7934,6 +8318,10 @@ function partial(f, ...outerArgs) {
     return f.apply(this, args);
   };
 }
+
+
+//======================================================================================\
+
 
 // Here is a function with three arguments
 const f = function (x, y, z) {
@@ -8087,6 +8475,10 @@ function pipe(readable, writable, callback) {
     .on("finish", callback);
 }
 
+
+//======================================================================================\
+
+
 // Define a regular polygon with n sides, centered at (x,y) with radius r.
 // The vertices are equally spaced along the circumference of a circle.
 // Put the first vertex straight up or at the specified angle.
@@ -8107,6 +8499,10 @@ function polygon(c, n, x, y, r, angle = 0, counterclockwise = false) {
   }
   c.closePath(); // Connect last vertex back to the first
 }
+
+
+//======================================================================================\
+
 
 // Assume there is just one canvas, and get its context object to draw with.
 let c = document.querySelector("canvas").getContext("2d");
@@ -8213,6 +8609,10 @@ function postJSON(host, endpoint, body, port, username, password) {
   });
 }
 
+
+//======================================================================================\
+
+
 // This function takes an array of input values and a "promiseMaker" function.
 // For any input value x in the array, promiseMaker(x) should return a Promise
 // that will fulfill to an output value. This function returns a Promise
@@ -8301,6 +8701,10 @@ function range(from, to) {
   return r;
 }
 
+
+//======================================================================================\
+
+
 // This prototype object defines methods inherited by all range objects.
 range.methods = {
   // Return true if x is in the range, false otherwise
@@ -8329,6 +8733,10 @@ function Range(from, to) {
   this.from = from;
   this.to = to;
 }
+
+
+//======================================================================================\
+
 
 // All Range objects inherit from this object.
 // Note that the property name must be "prototype" for this to work.
@@ -8646,6 +9054,10 @@ class SearchBox extends HTMLElement {
     else this.removeAttribute("hidden");
   }
 }
+
+
+//======================================================================================\
+
 
 // This static field is required for the attributeChangedCallback method.
 // Only attributes named in this array will trigger calls to that method.
@@ -8984,6 +9396,10 @@ class BitSet extends AbstractWritableSet {
   }
 }
 
+
+//======================================================================================\
+
+
 // Some pre-computed values used by the has(), insert() and remove() methods
 BitSet.bits = new Uint8Array([1, 2, 4, 8, 16, 32, 64, 128]);
 BitSet.masks = new Uint8Array([~1, ~2, ~4, ~8, ~16, ~32, ~64, ~128]);
@@ -9022,6 +9438,10 @@ async function search(term) {
   return resultsArray;
 }
 
+
+//======================================================================================\
+
+
 // Return the largest prime smaller than n, using the sieve of Eratosthenes
 function sieve(n) {
   let a = new Uint8Array(n + 1); // a[x] will be 1 if x is composite
@@ -9040,6 +9460,10 @@ function sieve(n) {
   while (a[n]) n--; // Loop backward to find the last prime
   return n; // And return it
 }
+
+
+//======================================================================================\
+
 
 // Smear the pixels of the rectangle to the right, producing a
 // sort of motion blur as if objects are moving from right to left.
@@ -9083,6 +9507,10 @@ function smear(c, n, x, y, w, h) {
   c.putImageData(pixels, x, y);
 }
 
+
+//======================================================================================\
+
+
 // This is the constructor function for our subclass
 function Span(start, span) {
   if (span >= 0) {
@@ -9093,6 +9521,10 @@ function Span(start, span) {
     this.from = start + span;
   }
 }
+
+
+//======================================================================================\
+
 
 // Ensure that the Span prototype inherits from the Range prototype
 Span.prototype = Object.create(Range.prototype);
@@ -9153,6 +9585,10 @@ if (threads.isMainThread) {
     threads.parentPort.postMessage(splines);
   });
 }
+
+
+//======================================================================================\
+
 
 // This is a simple static HTTP server that serves files from a specified
 // directory. It also implements a special /test/mirror endpoint that
@@ -9259,6 +9695,10 @@ function serve(rootDirectory, port) {
     }
   });
 }
+
+
+//======================================================================================\
+
 
 // When we're invoked from the command line, call the serve() function
 serve(process.argv[2] || "/tmp", parseInt(process.argv[3]) || 8000);
@@ -9399,6 +9839,10 @@ async function streamBody(response, reportProgress, processChunk) {
   return body; // Return the body text we accumulated
 }
 
+
+//======================================================================================\
+
+
 // Yield the first n elements of the specified iterable object
 function* take(n, iterable) {
   let it = iterable[Symbol.iterator](); // Get iterator for iterable object
@@ -9410,6 +9854,10 @@ function* take(n, iterable) {
     else yield next.value; // otherwise, yield the value
   }
 }
+
+
+//======================================================================================\
+
 
 // An array of the first 5 Fibonacci numbers
 [...take(5, fibonacciSequence())]; // => [1, 1, 2, 3, 5]
@@ -9431,6 +9879,10 @@ function textContent(e) {
   return s;
 }
 
+
+//======================================================================================\
+
+
 // This function takes a function and returns a wrapped version
 function timed(f) {
   return function (...args) {
@@ -9447,12 +9899,20 @@ function timed(f) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Compute the sum of the numbers between 1 and n by brute force
 function benchmark(n) {
   let sum = 0;
   for (let i = 1; i <= n; i++) sum += i;
   return sum;
 }
+
+
+//======================================================================================\
+
 
 // Now invoke the timed version of that test function
 timed(benchmark)(1000000); // => 500000500000; this is the sum of the numbers
@@ -9581,12 +10041,20 @@ function trace(o, m) {
   };
 }
 
+
+//======================================================================================\
+
+
 // Shear transform:
 //   x' = x + kx*y;
 //   y' = ky*x + y;
 function shear(c, kx, ky) {
   c.transform(1, ky, kx, 1, 0, 0);
 }
+
+
+//======================================================================================\
+
 
 // Rotate theta radians counterclockwise around the point (x,y)
 // This can also be accomplished with a translate, rotate, translate sequence
@@ -9595,6 +10063,10 @@ function rotateAbout(c, theta, x, y) {
   let st = Math.sin(theta);
   c.transform(ct, -st, st, ct, -x * ct - y * st + x, x * st - y * ct + y);
 }
+
+
+//======================================================================================\
+
 
 // Recursively traverse the Document or Element e, invoking the function
 // f on e and on each of its descendants
@@ -9683,6 +10155,10 @@ async function getCanvasBlob(canvas) {
   });
 }
 
+
+//======================================================================================\
+
+
 // Here is how we upload a PNG file from a canvas
 async function uploadCanvasImage(canvas) {
   let pngblob = await getCanvasBlob(canvas);
@@ -9706,6 +10182,10 @@ function wait(duration) {
     setTimeout(resolve, duration);
   });
 }
+
+
+//======================================================================================\
+
 
 // Begin by creating an audioContext object. Safari still requires
 // us to use webkitAudioContext instead of AudioContext.
@@ -9838,6 +10318,10 @@ function withDB(callback) {
     initdb(request.result, callback);
   };
 }
+
+
+//======================================================================================\
+
 
 // withDB() calls this function if the database has not been initialized yet.
 // We set up the database and populate it with data, then pass the database to
@@ -10012,6 +10496,10 @@ function* zip(...iterables) {
     }
   }
 }
+
+
+//======================================================================================\
+
 
 // Interleave three iterable objects
 [...zip(oneDigitPrimes(), "ab", [0])]; // => [2,"a",0,3,"b",5,7]
