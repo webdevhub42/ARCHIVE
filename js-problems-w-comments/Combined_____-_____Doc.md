@@ -6556,6 +6556,10 @@ function promiseSequence(inputs, promiseMaker) {
   return Promise.resolve([]).then(handleNextInput);
 }
 
+
+//======================================================================================\
+
+
 // Given a URL, return a Promise that fulfills to the URL body text
 function fetchBody(url) {
   return fetch(url).then((r) => r.text());
@@ -7626,6 +7630,10 @@ function write(stream, chunk, callback) {
   }
 }
 
+
+//======================================================================================\
+
+
 // Given an array of iterables, yield their elements in interleaved order.
 function* zip(...iterables) {
   // Get an iterator for each iterable
@@ -7733,6 +7741,10 @@ function initdb(db, callback) {
     });
 }
 
+
+//======================================================================================\
+
+
 // Given a zip code, use the IndexedDB API to asynchronously look up the city
 // with that zip code, and pass it to the specified callback, or pass null if
 // no city is found.
@@ -7762,6 +7774,10 @@ export function lookupCity(zip, callback) {
     };
   });
 }
+
+
+//======================================================================================\
+
 
 // Given the name of a city, use the IndexedDB API to asynchronously
 // look up all zip code records for all cities (in any state) that have
@@ -8237,6 +8253,10 @@ function promiseSequence(inputs, promiseMaker) {
   // the function above as its callback.
   return Promise.resolve([]).then(handleNextInput);
 }
+
+
+//======================================================================================\
+
 
 // Given a URL, return a Promise that fulfills to the URL body text
 function fetchBody(url) {
@@ -9880,6 +9900,10 @@ function initdb(db, callback) {
     });
 }
 
+
+//======================================================================================\
+
+
 // Given a zip code, use the IndexedDB API to asynchronously look up the city
 // with that zip code, and pass it to the specified callback, or pass null if
 // no city is found.
@@ -9909,6 +9933,10 @@ export function lookupCity(zip, callback) {
     };
   });
 }
+
+
+//======================================================================================\
+
 
 // Given the name of a city, use the IndexedDB API to asynchronously
 // look up all zip code records for all cities (in any state) that have
@@ -9957,6 +9985,10 @@ window.addEventListener("load", () => {
     });
   };
 });
+
+
+//======================================================================================\
+
 
 // Given an array of iterables, yield their elements in interleaved order.
 function* zip(...iterables) {
