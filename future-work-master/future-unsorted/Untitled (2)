@@ -1,0 +1,12 @@
+async function queryGoods(productName = '.*', vegetables = false, animal = false, fruit = false) {
+    return await Product.findAll({
+        where: {
+            productName: {
+                [Op.regexp]: productName,
+            },
+            vegetables,
+            animal,
+            fruit,
+        },
+    });
+}
