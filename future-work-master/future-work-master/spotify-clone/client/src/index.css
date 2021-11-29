@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "Circular Spotify Tx T Black";
+  src: url('./@font-face/01173b246d9d9ea808ea75a26b3b61bb.eot');
+  src: url("./@font-face/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"),
+  url("./@font-face/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"),
+  url("./@font-face/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"),
+  url("./@font-face/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"),
+  url("./@font-face/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
+body {
+  font-family: "Circular Spotify Tx T Black";
+  margin-left: 250px;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+
+a {
+  color: #bfbfbf;
+  text-decoration: none!important;
+  transition: .2s;
+}
+
+
+.navButton--active {
+  background-color: #282828;
+  color: #FFFFFF;
+}
+
+.navbar--active {
+  color: #FFFFFF;
+}
+
+.navbar--active2 {
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+
+a:hover {
+  color: #FFFFFF;
+  cursor: default;
+}
+
+
+.MuiSvgIcon-root {
+  fill: #b3b3b3 !important;
+}
+
+
+.songCards:hover {
+  background-color: #b3b3b3 !important;
+  border-radius: 5px;
+}
+
+
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.image-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+.image-container:hover .after {
+  display: flex;
+  background: rgba(0, 0, 0, .6);
+}
+
+.after{
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: translateZ(0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-area {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  border-radius: 15px;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background-color:rgb(40,40,40);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+._modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  background: rgb(40,40,40);
+  border: 0;
+  box-shadow: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+._modal-close-icon {
+  width: 10px;
+  height: 10px;
+  fill: transparent;
+  stroke: #b3b3b3;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.modal-body {
+  padding-top: 0.25em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+._hide-visual {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  margin-right: 17px;
+}
+.modal-button:hover{
+  color: #b3b3b3 !important;
+  cursor: default;
+}
+
+.icon{
+  fill: rgb(29, 185, 84) !important
+}
+
+.playlist-name-input{
+  line-height:56px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-transform: none;
+  width:100%;
+  background-color: transparent;
+  border:none;
+  outline:0;
+}
+.createPlaylistInput{
+  color:white;
+  font-size:14px;
+  font-weight: bold;
+  margin-left:480px;
+}
+.createPlaylist-header{
+  font-size: 45px;
+  color:white;
+  font-weight: bolder;
+  margin-bottom: 16px;
+  margin-left: 120px
+}
+.createPlaylistScreen{
+  position: absolute;
+  bottom:200px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index:100;
+  right:0;
+}
+
+.createPlaylist-button{
+  display:flex;
+  align-items: center;
+  font-size: 100%;
+  background-color: black;
+  color: #bfbfbf;
+  font-weight: bold;
+  border: none;
+  padding-bottom: 10;
+  transition: .2s linear;
+}
+.create-playlist-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:150px;
+  z-index:6;
+  background-color: rgba(40,40,40);
+}
+.createPlaylist-buttons{
+  display:flex;
+  margin-top: 16px;
+  margin-left:100px;
+}
+.createPlaylist-buttons-cancel, .createPlaylist-buttons-create {
+  margin-bottom: 14px;
+  width: 100%;
+  margin: 0 16px;
+  color: #FFF;
+  background-color: rgba(0,0,0,0.75);
+  font-size: 14px;
+  border-radius: 500px;
+  padding: 8px 24px;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 160px;
+  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0.5px solid #b8b8b8;
+  transition: background-color .1s ease-in;
+  outline: none;
+  text-align: center;
+  transition: transform .2s;
+  
+}
