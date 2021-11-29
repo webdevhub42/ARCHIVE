@@ -1,0 +1,44 @@
+
+function bubblishSort(array) {
+  for (let i = array.length; i > 0; i--) {
+    for (let j = 0; j < i - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        [array[j], array[j + 1]] = [array[j + 1], array[j]]
+        console.log(array);
+      }
+    }
+  }
+  return array;
+}
+
+
+
+function bubbleSort2(array) {
+  let isSorted  = false;
+  const newArray = array.slice();
+  while (isSorted === false) {
+    isSorted = true;
+    for (let i = 0; i < newArray.length -1; i++) {
+      if(newArray[i] > newArray[i + 1]) {
+        [newArray[i], newArray[i + 1]] = [newArray[i + 1], newArray[i]];
+        isSorted = false
+      }
+    }
+  } 
+
+  return newArray;
+}
+
+
+function randArray(length = 10, max = 10, min = 0) {
+  const arr = [];
+  
+  for (let i = 0; i < length; i++) {
+    arr[i] = Math.floor(Math.random() * (min + max + 1)) + min;
+  }
+  
+  return arr;
+}
+
+// console.log(bubblishSort(randArray()));
+// console.log(bubbleSort2(randArray()));
